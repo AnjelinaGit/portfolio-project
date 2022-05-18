@@ -84,10 +84,14 @@ p {
   margin: 30px;
   text-align: center;
   padding: 0;
+  display: block;
 }
 
 #profile-picture {
-  padding: 27px;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-branding {
@@ -187,8 +191,20 @@ footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
 }
+
+footer #open-source,
+#host {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+
+footer #open-source:hover,
+#host:hover {
+  text-decoration: underline;
+}
 @media (max-width: 960px) {
-  h1 {
+  h1,
+  .content h1 {
     font-size: 44px;
     line-height: 56px;
   }
